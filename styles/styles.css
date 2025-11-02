@@ -112,7 +112,7 @@ body{
 .navigation-list{
   display: flex;
   flex-wrap: wrap;
-  width: 460px;
+  width: 500px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -123,6 +123,7 @@ body{
   justify-content: center;
   align-items: center;
 }
+
 .navigation-user{
   max-width: 300px;
 }
@@ -137,6 +138,11 @@ body{
   width: 44px;
 }
 
+.navigation-serch{
+  width: 20px;
+  height: 20px;
+  background-color: #E5E5E5;
+}
 .main-title{
   background-image: url('../images/index-background.jpg');
   background-color: #82B3D3;
@@ -429,6 +435,7 @@ body{
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  align-items: center;
   width: 200px;
   list-style-type: none;
 }
@@ -458,6 +465,12 @@ body{
 .footer-logo-images{
   padding-top: 8.5px;
   padding-bottom: 8.5px;
+}
+
+.footer-social-item{
+  width: 48px;
+  height: 40px;
+  background-color: #E5E5E5;
 }
 
 .footer-link{
@@ -509,7 +522,7 @@ body{
 .breadcrumbs{
   margin: 0;
   padding: 0;
-  min-width: 114px;
+  width: 150px;
   list-style-type: none;
 }
 
@@ -536,8 +549,87 @@ body{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  padding: 0;
+  margin: 0;
 }
 
+.wrapper-filters-group{
+  display: flex;
+  gap: 70px;
+  margin-right: 140px;
+}
+.catalog-filters-group{
+  padding: 0;
+  margin: 0;
+  width: 160px;
+  border:  none;
+}
+
+.catalog-filters-group-price{
+  width: 288px;
+}
+
+.wrapper-filters-group-price-button{
+  display: flex;
+  gap: 70px;
+}
+.wrapper-filters-button{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 56px;
+}
+.catalog-filters-list{
+  padding: 0;
+  margin: 0;
+  margin-top: 32px;
+}
+
+.control-input{
+  margin: 0;
+  padding: 0;
+}
+.wrapper-filters-input{
+  margin-top: 32px;
+}
+
+.wrapper-input-price{
+  display: flex;
+  gap: 2px;
+  margin-bottom: 36px;
+}
+
+.input-price-left{
+  box-sizing: border-box;
+  width: 143px;
+  padding: 12px 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  outline: 0;
+  border: 0;
+}
+
+.input-price-right{
+  box-sizing: border-box;
+  width: 143px;
+  padding: 12px 20px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  outline: 0;
+  border: 0;
+}
+.catalog-filters-item{
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.catalog-filters-item:last-child{
+  margin: 0;
+}
+
+.input-price-slider{
+  margin: 0;
+}
 .filter-choice{
   font-weight: 400;
   font-size: 18px;
