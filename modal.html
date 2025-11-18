@@ -122,7 +122,7 @@
           <div class="wrapper-serch-hotel">
             <h2 class="serch-title header-2">Заинтересовались?</h2>
             <p class="serch-description header-2-description">Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
-            <a href="modal.html" class="serch-button button">Поиск гостиницы в седоне</a>
+            <button type="button" class="serch-button button">Поиск гостиницы в седоне</button>
           </div>
         </section>
         <section class="subscrine">
@@ -187,6 +187,84 @@
           </a>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-serch">
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          </section>
+          <a href="index.html" class="modal-close-button">
+            <svg  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" class="svg-close-button">
+              <path d="M14 1.3 12.7 0 7 5.7 1.3 0 0 1.3 5.7 7 0 12.7 1.3 14 7 8.3l5.7 5.7 1.3-1.3L8.3 7 14 1.3Z"/>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </a>
+          <form class="serch-form" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="field-group field-group-date">
+              <label class="check-in-date subscrine-date" for="check-in-date">Дата Заезда:</label>
+              <input class="serch-form-field field" type="date" id="check-in-date" name="check-in-date">
+            </div>
+            <span class="subscrine-check-in-date">Мы не можем отправить вас в прошлое.</span>
+            <div class="field-group field-group-date">
+              <label class="departure-date subscrine-date" for="departure-date">Дата Выезда:</label>
+              <input class="serch-form-field field" type="date" id="departure-date" name="departure-date">
+            </div>
+            <span class="subscrine-departure-date">На эти даты есть свободные номера. Пока есть.</span>
+            <div class="wrapper-field-group">
+              <div class="field-group field-group-adult">
+                <label class="adult subscrine-date" for="adult">Взрослые:</label>
+                <div class="install-people-count">
+                  <button class="button-minus" type="button">
+                    <div class="math-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                        <path d="M0 0v2h14V0H0Z"/>
+                      </svg>
+                    </div>
+                  </button>
+                  <input class="serch-form-field people-count" type="number" id="adult" name="adult-count" value="2" min="0" max="10" class="math-button">
+                  <button class="button-plus" type="button">
+                    <div class="math-button plus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                    </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="field-group field-group-children">
+                <span class="children">
+                  <label class="children subscrine-date" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12">
+                        <path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="install-people-count">
+                  <button class="button-minus" type="button">
+                    <div class="math-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                        <path d="M0 0v2h14V0H0Z"/>
+                      </svg>
+                    </div>
+                  </button>
+                  <input class="serch-form-field people-count" type="number" id="children" name="children-count" value="2" min="0" max="10">
+                  <button class="button-plus" type="button">
+                    <div class="math-button plus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button form-button-serch" type="submit">Найти</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
